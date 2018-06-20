@@ -1,7 +1,7 @@
 # password-audit
 # Powershell script to export hashed creds and user info from Active Directory
 
-# Run the script on a domain controller that has Powershell 3 or higher.
+Run the script on a domain controller that has Powershell 3 or higher.
 # Copy script and DSInternals folder to a domain controller Desktop.
 # Open Powershell as administrator.
 # Run "Set-ExecutionPolicy Unrestricted" on Domain Controller prior to running the script.
