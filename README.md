@@ -2,10 +2,10 @@
 Powershell script to export hashed creds and user info from Active Directory
 
 # Prerequisites
-Run the script on a domain controller that has Powershell 3 or higher.
-Copy script and DSInternals folder to a domain controller Desktop.
-Open Powershell as administrator.
-Run "Set-ExecutionPolicy Unrestricted" on Domain Controller prior to running the script.
+1. Run the script on a domain controller that has Powershell 3 or higher.
+2. Copy script and DSInternals folder to a domain controller Desktop.
+3. Open Powershell as administrator.
+4. Run "Set-ExecutionPolicy Unrestricted" on Domain Controller prior to running the script.
 
 
 # Post script Cleanup:
