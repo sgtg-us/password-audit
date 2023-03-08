@@ -9,9 +9,9 @@ Powershell script to export hashed creds and user info from Active Directory
 
 
 # Post script Cleanup:
-1. Change owner of SBS-delete folder to logged in user. Make sure to check "Replace owner on subcontainers and objects" and "Replace all child object permission entries with inheritable permission entires from this object."
-2. Delete the SBS-delete and DSInternals folders.
-3. Delete the SBS-output folder after uploading the zipped folder to TRAC.
+1. Change owner of company-delete folder to logged in user. Make sure to check "Replace owner on subcontainers and objects" and "Replace all child object permission entries with inheritable permission entires from this object."
+2. Delete the company-delete and DSInternals folders.
+3. Delete the company-output folder.
 
 # Troubleshooting:
 Try to run the below command in that powershell window. Maybe something is blocking the DSInternals import. 
