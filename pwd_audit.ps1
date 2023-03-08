@@ -1,9 +1,9 @@
 param (
-  [string]$path = ".\SBS-delete",
+  [string]$path = ".\company-delete",
   [string]$hashlist = 'hashcatnt'
   )
 
-new-item $path\..\SBS-output -itemtype directory
+new-item $path\..\company-output -itemtype directory
 try {
   ntdsutil "activate instance ntds" ifm "create sysvol Full NoDefrag $path" q q q
 }
@@ -67,8 +67,8 @@ foreach($dataLine in $dataLines){
 }
 
 #Get-ChildItem $path -Recurse | Remove-Item -Force -Recurse
-Move-Item .\hashes.txt -Destination SBS-output\hashes.txt
-Move-Item .\user_info.csv -Destination SBS-output\user_info.csv
-Move-Item .\output.csv -Destination SBS-output\output.csv
+Move-Item .\hashes.txt -Destination company-output\hashes.txt
+Move-Item .\user_info.csv -Destination company-output\user_info.csv
+Move-Item .\output.csv -Destination company-output\output.csv
 
-"Export is finished. Zip the SBS-output folder and upload it to TRAC. Thanks for your help!"
+"Export is finished."
